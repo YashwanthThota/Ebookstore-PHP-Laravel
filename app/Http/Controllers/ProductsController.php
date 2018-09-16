@@ -100,16 +100,19 @@ class ProductsController extends Controller
      */
     public function update(Request $request, $id)
     {
+      //dd($request);
         $this->validate($request, [
             'name' => 'required',
             'description' => 'required',
             'price' => 'required'
         ]);
-        
+
         $product = Product::find($id);
 
-        if($request->hasFile('image'))
+      //if($request->hasFile('image'))
+      if($request->file('image')->isValid())
         {
+          //dd($request->image);
             $product_image = $request->image;
 
             $product_image_new_name = time() . $product_image->getClientOriginalName();
@@ -120,11 +123,10 @@ class ProductsController extends Controller
 
             $product->save();
         }
-
         $product->name = $request->name;
         $product->description = $request->description;
         $product->price = $request->price;
-        
+
 
         $product->save();
 
@@ -142,7 +144,7 @@ class ProductsController extends Controller
     public function destroy($id)
     {
         $product = Product::find($id);
-        
+
         if(file_exists($product->image))
         {
             unlink($product->image);

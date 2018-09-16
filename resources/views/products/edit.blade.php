@@ -8,7 +8,7 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    <form action="{{ route('products.update', ['id' => $product->id ]) }}" method="post">
+                    <form action="{{ route('products.update', ['id' => $product->id ]) }}" method="post" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         {{ method_field('PUT') }}
                         <div class="form-group">

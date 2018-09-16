@@ -87,15 +87,15 @@
                                                       <a href="#" class="logos-item">
                                                             <img src="{{asset('app/img/amex.png') }}" alt="Amex">
                                                       </a>
-                                                      
+
                                                       <span style="float: right;">
                                                             <form action="{{ route('cart.checkout') }}" method="POST">
                                                                   {{ csrf_field() }}
                                                                   <script
                                                                   src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                                                  data-key="pk_test_49o7ISW77yQcjzjWCBvTvCbk"
+                                                                  data-key="pk_test_84URYz0jphYeYQPEuuRZNRAx"
                                                                   data-amount="{{ Cart::total() * 100 }}"
-                                                                  data-name="Udemy E-commerce tutorial"
+                                                                  data-name="Laravel Ebookstore"
                                                                   data-description="Buy some books"
                                                                   data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
                                                                   data-locale="auto">

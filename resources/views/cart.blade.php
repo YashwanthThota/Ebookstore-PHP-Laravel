@@ -41,7 +41,7 @@
 
                                                       <div class="cart-product__item">
                                                       <a href="#">
-                                                            <img src="{{ asset($pdt->model->image) }}" alt="product" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image">
+                                                            <img src="{{ asset($pdt->model->image) }}" alt="product" height="100" width="100" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image">
                                                       </a>
                                                       <div class="cart-product-content">
                                                             <h5 class="cart-product-title">{{ $pdt->name }}</h5>
@@ -70,26 +70,9 @@
                                           </tr>
                                     @endforeach
 
-                                    
 
-                                    <tr>
-                                          <td colspan="5" class="actions">
 
-                                                <div class="coupon">
-                                                <input name="coupon_code" class="email input-standard-grey" value="" placeholder="Coupon code" type="text">
-                                                <div class="btn btn-medium btn--breez btn-hover-shadow">
-                                                      <span class="text">Apply Coupon</span>
-                                                      <span class="semicircle--right"></span>
-                                                </div>
-                                                </div>
 
-                                                <div class="btn btn-medium btn--dark btn-hover-shadow">
-                                                <span class="text">Apply Coupon</span>
-                                                <span class="semicircle"></span>
-                                                </div>
-
-                                          </td>
-                                    </tr>
 
                                     </tbody>
                                     </table>
