@@ -1,4 +1,4 @@
-# online bookstore - An E-commerce application using PHP Laravel and MySQL:
+# Online bookstore - An E-commerce application using PHP Laravel and MySQL:
 
 **DESCRIPTION:** 
   - This is a PHP Laravel based online bookstore application which enables the customer to buy books online by using credit or debit  card.
