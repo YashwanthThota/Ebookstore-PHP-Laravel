@@ -27,7 +27,7 @@
 
    - The application interface renders depending upon the device screen(mobile or web)
    - Used **Responsive Web Design Styling Techniques** for making the application device screen independent 
-   - Used **Laravel Shopping Cart Package** to mannipulate items in the cart
+   - Used **Laravel Shopping Cart Package** to manipulate items in the cart
    - Used **Stripe Services** to enable the card payments
    - Used **mailtrap.io Service** to enable sending of email
    - Used **Sessions** for cart items persistence throughout the session.
